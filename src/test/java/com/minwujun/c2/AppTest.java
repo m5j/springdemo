@@ -17,15 +17,9 @@ public class AppTest {
         System.out.println("IOC容器启动完毕...");
         println();
 
-        System.out.println("所有注入的组件如下：");
-        String[] beanDefinitionNames = context.getBeanDefinitionNames();
-        for (String each : beanDefinitionNames) {
-            System.out.println(each);
-        }
-        println();
-
         context.close();
-
+        System.out.println("IOC容器关闭...");
+        println();
     }
 
     private void println() {

@@ -1,13 +1,21 @@
 package com.minwujun.c2.bean;
 
-import lombok.Getter;
-import lombok.Setter;
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
-/**
- * Created by MIN.WU.JUN on 2020/1/9
- */
-@Setter
-@Getter
 public class Cat {
-    private String name;
+
+    public Cat() {
+        System.out.println("Cat无参构造");
+    }
+
+    @PostConstruct
+    public void init() {
+        System.out.println("Cat的PostConstruct注解");
+    }
+
+    @PreDestroy
+    public void destroy() {
+        System.out.println("Cat的PreDestroy注解");
+    }
 }

@@ -21,7 +21,7 @@ public class Person {
     }
 
     public void destroy() {
-        System.out.println("Person自定义的destory方法");
+        System.out.println("Person自定义的destroy方法");
     }
 
 }

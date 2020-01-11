@@ -11,4 +11,17 @@ import lombok.Setter;
 public class Person {
     private String name;
     private int age;
+
+    public Person() {
+        System.out.println("Person无参构造");
+    }
+
+    public void init() {
+        System.out.println("Person自定义的init方法");
+    }
+
+    public void destroy() {
+        System.out.println("Person自定义的destroy方法");
+    }
+
 }

@@ -1,13 +1,23 @@
 package com.minwujun.c2.bean;
 
-import lombok.Getter;
-import lombok.Setter;
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
 
-/**
- * Created by MIN.WU.JUN on 2020/1/9
- */
-@Setter
-@Getter
-public class Dog {
-    private String name;
+public class Dog implements InitializingBean, DisposableBean {
+
+    public Dog() {
+        System.out.println("Dog无参构造");
+    }
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        System.out.println("Dog重写的afterPropertiesSet方法");
+    }
+
+    @Override
+    public void destroy() throws Exception {
+        System.out.println("Dog重写的destroy方法");
+    }
+
+
 }
