@@ -1,9 +1,6 @@
 package com.minwujun.c2.config;
 
-import com.minwujun.c2.bean.Cat;
-import com.minwujun.c2.bean.Dog;
-import com.minwujun.c2.bean.MyBeanPostProcessor;
-import com.minwujun.c2.bean.Person;
+import com.minwujun.c2.bean.Life;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -13,23 +10,30 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class BeanConfig {
 
+//    @Bean(initMethod = "init", destroyMethod = "destroy")
+//    public Person person() {
+//        return new Person();
+//    }
+//
+//    @Bean
+//    public Dog dog() {
+//        return new Dog();
+//    }
+
+//    @Bean
+//    public Cat cat() {
+//        return new Cat();
+//    }
+//
+//    @Bean
+//    public MyBeanPostProcessor myBeanPostProcessor() {
+//        return new MyBeanPostProcessor();
+//    }
+
+
     @Bean(initMethod = "init", destroyMethod = "destroy")
-    public Person person() {
-        return new Person();
+    public Life life() {
+        return new Life();
     }
 
-    @Bean
-    public Dog dog() {
-        return new Dog();
-    }
-
-    @Bean
-    public Cat cat() {
-        return new Cat();
-    }
-
-    @Bean
-    public MyBeanPostProcessor myBeanPostProcessor() {
-        return new MyBeanPostProcessor();
-    }
 }

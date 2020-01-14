@@ -13,6 +13,9 @@
       <module name="springdemo" target="11" />
     </bytecodeTargetLevel>
   </component>
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="InspectionProjectProfileManager">
     <profile version="1.0">
@@ -156,6 +159,9 @@
   <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="false" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+  </component>
   <component name="libraryTable">
     <library name="Maven: com.beust:jcommander:1.48">
       <CLASSES>
@@ -166,6 +172,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/com/beust/jcommander/1.48/jcommander-1.48-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: javax.annotation:javax.annotation-api:1.3.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.projectlombok:lombok:1.18.8">

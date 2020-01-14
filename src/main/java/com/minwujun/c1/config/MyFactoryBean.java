@@ -9,7 +9,7 @@ import org.springframework.beans.factory.FactoryBean;
 public class MyFactoryBean implements FactoryBean {
     @Override
     public Object getObject() throws Exception {
-        return new Cat();
+        return new Cat();  //注入MyFactoryBean的时候，实际上注入的是cat
     }
 
     @Override

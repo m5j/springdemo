@@ -19,5 +19,4 @@ public class Dog implements InitializingBean, DisposableBean {
         System.out.println("Dog重写的destroy方法");
     }
 
-
 }
